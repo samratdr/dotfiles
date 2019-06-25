@@ -1,0 +1,28 @@
+[user]
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = 
+	email = 
+[color]
+	ui = true
+# Difftool config
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+# Mergetool config
+[merge]
+    tool = meld
+[mergetool "meld"]
+    path = meld "$LOCAL" "$REMOTE"
+[mergetool]
+    keepBackup = false
+[core]
+	editor = atom --wait
+	excludesfile = $HOME\\.gitignore_global
