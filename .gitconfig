@@ -5,8 +5,8 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [user]
-	name = 
-	email = 
+	name = samratroy
+	email = samratdebroy@gmail.com
 [color]
 	ui = true
 # Difftool config
@@ -16,11 +16,20 @@
     prompt = false
 [difftool "meld"]
     cmd = meld "$LOCAL" "$REMOTE"
+[difftool "codecompare"]
+	cmd = '$pathto\\CodeCompare.exe' -W \"$LOCAL\" \"$REMOTE\" 
+	renames = true
+[difftool "bcompare"]
+	cmd =  '$pathto\\BCompare.exe' "$LOCAL" "$REMOTE"
+	renames = true
 # Mergetool config
 [merge]
     tool = meld
 [mergetool "meld"]
-    path = meld "$LOCAL" "$REMOTE"
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+[mergetool "codecompare"]
+	cmd = '$pathto\\codemerge.exe' -MF \"$LOCAL\" -TF \"$REMOTE\" -BF \"$BASE\" -RF \"$MERGED\" 
+	trustExitCode = true
 [mergetool]
     keepBackup = false
 [core]
