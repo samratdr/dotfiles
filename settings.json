@@ -1,0 +1,97 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\sysnative\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/K",
+        "C:\\dev\\cmder\\vscode.bat"
+    ],
+    // "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // "terminal.integrated.shellArgs.windows": [
+    //     "-ExecutionPolicy",
+    //     "Bypass",
+    //     "-NoLogo",
+    //     "-NoProfile",
+    //     "-NoExit",
+    //     "-Command",
+    //     ". 'C:\\dev\\cmder\\vendor\\profile.ps1'"],
+    "terminal.integrated.fontFamily": "monospace",
+    "workbench.colorTheme": "Nord",
+    "files.autoSave": "afterDelay",
+    "editor.colorDecorators": true,
+    "editor.cursorStyle": "underline",
+    "editor.cursorBlinking": "phase",
+    "workbench.colorCustomizations": {
+        "editorWarning.foreground": "#7bff001a", // Nord: 7bff0000
+        "editor.foreground": "#afe4db",
+        "editor.background": "#252932", //1a1d23 252932
+        "editorGutter.background": "#252931"
+    },
+    "editor.tokenColorCustomizations": {
+        "[Nord]": {
+            "functions": "#beae4f",
+            "strings": "#2F9F6F",
+            "types": "#DCAAA1",
+            "keywords": "#F92672", // final
+            "variables": "#c3afe4",
+            "numbers": "#227e92",
+            "textMateRules": [{
+                    "scope": "meta.function",
+                    "settings": {
+                        "foreground": "#b0ca80"
+                    }
+                },
+                {
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#c3afe4"
+                    }
+                },
+                {
+                    "scope": "keyword.operator",
+                    "settings": {
+                        "foreground": "#a36060",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "keyword.control",
+                    "settings": {
+                        "foreground": "#37b441"
+                    }
+                },
+                {
+                    "scope": "keyword",
+                    "settings": {
+                        "foreground": "#F92672"
+                    }
+                },
+                /* {
+                    "scope": "meta.class",
+                    "settings": {
+                        "foreground": "#F92672",
+                    }
+                }, */
+                {
+                    "scope": "support.type.property-name",
+                    "settings": {
+                        "foreground": "#75a7b1",
+                    }
+                }
+            ]
+        }
+    },
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "Source Code Pro, Fira Code",
+    "editor.fontSize": 15,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "javascript": "javascriptreact",
+        "plaintext": "jade"
+    },
+    "emmet.showExpandedAbbreviation": "always",
+    // "vsicons.dontShowNewVersionMessage": true,
+    "git.ignoreMissingGitWarning": true,
+    "git.path": "C:\\development\\Git\\bin\\git.exe",
+    
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.iconTheme": "ayu"
+}
