@@ -1,7 +1,6 @@
 ;; my info
 ;; ref doc: https://www.sandeepnambiar.com/my-minimal-emacs-setup/
 ;;          https://suvratapte.com/configuring-emacs-from-scratch-packages/
-
 (setq user-full-name "Samrat Deb Roy"
       user-mail-address "samratdebroy@gmail.com")
 
@@ -60,7 +59,6 @@
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 
 (package-initialize)
-
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -159,6 +157,7 @@
   :ensure t
   :bind ("M-m" . er/expand-region))
 
+;; TODO: add a few more crux key-bindings
 (use-package crux
   :ensure t
   :bind
