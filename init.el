@@ -11,7 +11,7 @@
 ;; Do not show the startup screen.
 (setq inhibit-startup-message t)
 (setq inhibit-startup-screen t)
-
+(setq-default line-spacing 0.2)
 ;; open emacs in maximized window
 (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 ;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -71,7 +71,13 @@
 ;; theme
 (use-package spacemacs-theme
   :defer t
-  :init (load-theme 'spacemacs-dark t))
+  ;; :init (load-theme 'spacemacs-dark t)
+  )
+
+(use-package doom-themes
+  :defer t
+  :init (load-theme 'doom-oceanic-next)
+  )
 
 ;; Additional packages and their configurations
 
@@ -167,3 +173,8 @@
   :ensure t
   :hook (after-init . evil-mode)
   )
+
+(setq visible-bell t)
+(setq ring-bell-function nil)
+
+;; EOF
